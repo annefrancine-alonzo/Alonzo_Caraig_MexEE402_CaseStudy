@@ -9,7 +9,7 @@ Batangas State University, Alangilan Campus
 | Name | Student Number | Section |
 |---|---|---|
 | Alonzo, Anne Francine B. | 23-01520 | MEXE-4102 |
-| Surname, First Name | |MEXE - 4102 |
+| Caraig, Charles Edward R.| 23-01535 | MEXE-4102 |
 
 ## Notebook links
 
