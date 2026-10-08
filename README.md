@@ -50,84 +50,87 @@ In chapter 8, I learned that preprocessing pipelines works like conveyor belts, 
 List any mistake you found in the original notebooks, and the correct version.
 There are real ones in there. Finding them earns points.
 
-<table border="1" style="border-collapse: collapse; width: 100%;">
+<table border="1" style="border-collapse: collapse; width: 100%; table-layout: fixed;">
   <thead>
     <tr>
-      <th style="padding: 10px;">Mistake in the Original Notebook</th>
-      <th style="padding: 10px;">Correct Version</th>
+      <th style="width: 50%; padding: 12px; text-align: center; vertical-align: middle;">
+        Mistake in the Original Notebook
+      </th>
+      <th style="width: 50%; padding: 12px; text-align: center; vertical-align: middle;">
+        Correct Version
+      </th>
     </tr>
   </thead>
 
   <tbody>
     <tr>
-      <td style="padding: 10px;">
+      <td style="padding: 12px; vertical-align: top;">
         The correlation example says
         <strong>“assignments completed ↔ grades unrelated”</strong>
         under zero correlation.
       </td>
-      <td style="padding: 10px;">
+      <td style="padding: 12px; vertical-align: top;">
         The actual data shows <strong>Assignments Completed</strong> and
         <strong>Final Grade</strong> have a strong positive correlation
         (<strong>0.917</strong>), so they are clearly related.
       </td>
     </tr>
     <tr>
-      <td style="padding: 10px;">
+      <td style="padding: 12px; vertical-align: top;">
         The notebook uses <code>RFECV(cv=5)</code> with only
         <strong>7 data samples</strong>, which produces warnings that R² is
         not well-defined with fewer than two samples in some folds.
       </td>
-      <td style="padding: 10px;">
+      <td style="padding: 12px; vertical-align: top;">
         Use a smaller number of folds, such as <code>cv=3</code>, or use a
         larger dataset before applying 5-fold cross-validation.
       </td>
     </tr>
     <tr>
-      <td style="padding: 10px;">
+      <td style="padding: 12px; vertical-align: top;">
         The notebook's RFECV result selects only
         <strong>assignments completed</strong>, even though the features are
         highly correlated and the dataset is extremely small.
       </td>
-      <td style="padding: 10px;">
-        This result should be treated cautiously; a larger dataset and
+      <td style="padding: 12px; vertical-align: top;">
+        This result should be treated cautiously. A larger dataset and
         appropriate cross-validation would give a more reliable
         feature-selection result.
       </td>
     </tr>
     <tr>
-      <td style="padding: 10px;">
+      <td style="padding: 12px; vertical-align: top;">
         <strong>Ordinal Encoding Numbering:</strong>
         The markdown says Little = 1, Medium = 2, Lots = 3, but Ordinal
         Encoding outputs are Little = 0, Medium = 1, Lots = 2.
       </td>
-      <td style="padding: 10px;">
-        Either fix the markdown of Ordinal Encoding Numbering to
-        <strong>Little = 0, Medium = 1, Lots = 2</strong>, or shift the result:
+      <td style="padding: 12px; vertical-align: top;">
+        Either fix the markdown to
+        <strong>Little = 0, Medium = 1, Lots = 2</strong>,
+        or shift the result by 1:
         <br><br>
-        <code>
-          df_3['Ice_encoded'] = ord_enc.fit_transform(df_3[['Ice']]) + 1
-        </code>
+        <code>df_3['Ice_encoded'] = ord_enc.fit_transform(df_3[['Ice']]) + 1</code>
       </td>
     </tr>
     <tr>
-      <td style="padding: 10px;">
+      <td style="padding: 12px; vertical-align: top;">
         The Z-score note contradicts the output. The markdown says
         <strong>100 is a clear outlier</strong>, but the output is
         <code>Outliers: []</code>.
       </td>
-      <td style="padding: 10px;">
+      <td style="padding: 12px; vertical-align: top;">
         The Z-score method did not find any outliers. The z-score of
-        <strong>100</strong> is about <strong>2.62</strong>, below the
-        cutoff of <strong>3</strong>.
+        <strong>100</strong> is about <strong>2.62</strong>, which is below
+        the cutoff of <strong>3</strong>.
       </td>
     </tr>
     <tr>
-      <td style="padding: 10px;">
+      <td style="padding: 12px; vertical-align: top;">
         The notes say the result is <strong>“ready for ML models”</strong>,
         but it isn't. <code>ColumnTransformer</code> drops unlisted columns,
         so <code>X_transformed</code> has only scaled Age and Fare.
       </td>
-      <td style="padding: 10px;">
+      <td style="padding: 12px; vertical-align: top;">
         <code>X_transformed</code> contains only the scaled
         <strong>Age</strong> and <strong>Fare</strong>. Other columns still
         need encoding.
@@ -140,8 +143,10 @@ There are real ones in there. Finding them earns points.
 
 ## Note on AI tools
 
-Say whether you used an AI tool, and what for. This is not a penalty.
-Hiding it is.
+I used AI tools to support my learning and complete the activities. I used Gemini to help correct or troubleshoot code when I typed something incorrectly, and I used ChatGPT to help me understand the lessons, clarify concepts, and organize my answers. 
+
+I used AI tools to aid in understanding the lessons and completing my activities. I used Gemini to aid in troubleshooting code. I used Claude to help me understand the lessons, clarify concepts and codes.
+
 
 ## References
 
