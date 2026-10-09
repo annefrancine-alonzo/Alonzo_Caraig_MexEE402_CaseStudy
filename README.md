@@ -24,7 +24,7 @@
 | Ch9 | [https://colab.research.google.com/drive/1iGGcN0Wc5b7FwhDRu-5FeNU2lc2_W8Nn] |
 
 
-## 📚 What We Learned
+##  What We Learned
 
 <h3>Chapter 1,2 and 3 – Exploring and Cleaning Data</h3>
 
