@@ -26,41 +26,44 @@
 
 ## 📚 What We Learned
 
-<h3>Chapter 1 – Exploring and Cleaning Data</h3>
+<h3>Chapter 1,2 and 3 – Exploring and Cleaning Data</h3>
 
 <p>
-This chapter taught me that data must be properly explored and cleaned before it can be used for machine learning. I understood how checking missing values and removing unnecessary columns can make the dataset more reliable, and I was surprised that small data issues can affect the results of a model.
+This chapter demonstrated that data must be properly explored and cleaned before it can be used for machine learning. The learner understood how checking missing values and removing unnecessary columns can improve dataset reliability and recognized that even minor data issues can affect a model’s results.
 </p>
 
 <h3>Chapter 4 – Unleashing the Power of Data Through Transformation and Feature Engineering</h3>
 
 <p>
-In chapter 4, I learned about feature engineering, how to transform data and create new features from existing data. I learned the basics such as binning, to convert numerical data and group them in different ranges as categorical data. I understood which methods to use when categorical variables have categorical order or not.
+In Chapter 4, the learner gained knowledge about feature engineering, including how to transform data and create new features from existing data. The learner explored basic techniques such as binning, which groups numerical data into different ranges and converts them into categorical data. The learner also understood how to choose appropriate encoding methods based on whether categorical variables have an inherent order or not.
 </p>
 
 <h3>Chapter 5 – Data Scaling</h3>
 
 <p>
-This chapter taught me that features with different numerical ranges can affect how a machine-learning model interprets the data. I was surprised that simply scaling the values using methods like StandardScaler or MinMaxScaler can make features more balanced and suitable for modeling.
+This chapter demonstrated that features with different numerical ranges can affect how a machine-learning model interprets data. The learner discovered that scaling techniques, such as StandardScaler and MinMaxScaler, can help normalize or standardize feature values, making them more balanced and suitable for machine-learning modeling.
 </p>
 
 <h3>Chapter 6 – Dealing with Outliers</h3>
 
 <p>
-In chapter 6, I learned what outliers are and how to detect them using z-scores and when this method does not work then the IQR method is used to identify the outliers as well as the methods on how to handle outliers. I was surprised to learn that a single outlier can ruin a dataset or distort analysis.
+In Chapter 6, the learner gained an understanding of outliers and how to detect them using Z-scores. The learner also learned that when the Z-score method is not suitable, the Interquartile Range (IQR) method can be used to identify outliers, along with different techniques for handling them. This chapter highlighted how a single outlier can significantly affect a dataset and distort the results of data analysis.
 </p>
 
 <h3>Chapter 7 – Feature Selection</h3>
 
 <p>
-This chapter taught me that not all features are necessary for a machine-learning model, and different methods can select different important features. I was surprised that methods like Filter, RFECV, and LassoCV can reduce the number of features while still keeping the information most useful for prediction.
+This chapter demonstrated that not all features are necessary for a machine-learning model and that different methods can identify important features in different ways. The learner discovered that techniques such as Filter, RFECV, and LassoCV can reduce the number of features while retaining the information most useful for making accurate predictions.
 </p>
 
 <h3>Chapter 8 – Constructing a Preprocessing Pipeline</h3>
 
 <p>
-In chapter 8, I learned that preprocessing pipelines works like conveyor belts, taking raw data in a series of steps so it comes out ready for a ML model to use. I understood how preprocessing Pipelines and ColumnTransformers can combine steps into one output. I learned that using a pipeline is more efficient, since the same pipeline can be reused on new data to get consistent results and few human errors.
+In Chapter 8, the learner understood that preprocessing pipelines work like conveyor belts, processing raw data through a series of steps until it is ready for use in a machine-learning model. The learner also gained knowledge of how preprocessing pipelines and ColumnTransformers combine different preprocessing steps into a single workflow. This chapter highlighted the efficiency of using pipelines, as they can be reused on new data to produce consistent results while reducing manual work and the possibility of human error.
 </p>
+
+<h3>Chapter 9 – Full Pipeline and Evaluation</h3>
+The members  gained a better understanding of how data preparation and preprocessing contribute to building an effective machine-learning model. Through the activities, the learner recognized the importance of organizing, transforming, and analyzing data to improve its quality and reliability. These lessons demonstrated that proper data preparation is an essential step in achieving more accurate and consistent machine-learning results.
 
 
 ## Errors we found
@@ -160,9 +163,10 @@ There are real ones in there. Finding them earns points.
 
 
 ## Note on AI tools
-
+- Base on Member 1 (Anne Francine Alonzo) understanding:
 I used AI tools to support my learning and complete the activities. I used Gemini to help correct or troubleshoot code when I typed something incorrectly, and I used ChatGPT to help me understand the lessons, clarify concepts, and organize my answers. 
 
+- Base on Member 2 (Charles Edward R. Caraig) understanding:
 I used AI tools to aid in understanding the lessons and completing my activities. I used Gemini to aid in troubleshooting code. I used Claude to help me understand the lessons, clarify concepts and codes.
 
 
