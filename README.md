@@ -29,7 +29,7 @@ Batangas State University, Alangilan Campus
 
 ##  What We Learned
 
-<h3>Chapter 1,2 and 3 – Exploring and Cleaning Data</h3>
+<h3>Chapter 1, 2 and 3 – Exploring and Cleaning Data</h3>
 
 <p>
 This chapter demonstrated that data must be properly explored and cleaned before it can be used for machine learning. The learner understood how checking missing values and removing unnecessary columns can improve dataset reliability and recognized that even minor data issues can affect a model’s results.
