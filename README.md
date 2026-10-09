@@ -3,6 +3,8 @@
 **MexEE Elective 2: Data Science and Machine Learning**
 
 Batangas State University, Alangilan Campus
+
+
 1st Semester, AY 2026-2027
 
 ## Members
