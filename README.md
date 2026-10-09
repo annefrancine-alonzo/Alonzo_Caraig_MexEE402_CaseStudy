@@ -174,4 +174,3 @@ I used AI tools to aid in understanding the lessons and completing my activities
 
 McKinney, W. (2021). Python for Data Analysis, 3rd ed. O'Reilly.
 VanderPlas, J. Python Data Science Handbook.
-Any other page or article you used.
